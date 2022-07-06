@@ -228,6 +228,7 @@ a {
         letter-spacing: 0.4em;
         font-size: 4.0vw;
     }
+    body{overflow-x: hidden;}
 
     #nameTitle {
         text-align: center;
@@ -603,5 +604,6 @@ canvas {
     #menuLinks{
         font-size: 17px; 
     }
+    body{overflow-x: hidden;}
 
     }
