@@ -123,7 +123,7 @@ debugObject.envMapIntensity = 2.5
  
 // 3D Model
 gltfLoader.load(
-   'static/models/DamagedHelmet/glTF/mayeight2.gltf',
+   'assets/static/models/DamagedHelmet/glTF/mayeight2.gltf',
    (gltf) =>
    {
        gltf.scene.scale.set(1.33, 1.33, 1.33)
@@ -257,11 +257,50 @@ const tick = () =>
    // Update points only when the scene is ready
    if(sceneReady)
    {
+       // Go through each point
+       for(const point of points)
+       {
+           // Get 2D screen position
+           const screenPosition = point.position.clone()
+           screenPosition.project(camera)
+  
+           // Set the raycaster
+           raycaster.setFromCamera(screenPosition, camera)
+           const intersects = raycaster.intersectObjects(scene.children, true)
+  
+           // No intersect found
+           if(intersects.length === 0)
+           {
+               // Show
+               point.element.classList.add('visible')
+           }
+ 
+           // Intersect found
+           else
+           {
+               // Get the distance of the intersection and the distance of the point
+               const intersectionDistance = intersects[0].distance
+               const pointDistance = point.position.distanceTo(camera.position)
+  
+               // Intersection is close than the point
+               if(intersectionDistance < pointDistance)
+               {
+                   // Hide
+                   point.element.classList.remove('visible')
+               }
+               // Intersection is further than the point
+               else
+               {
+                   // Show
+                   point.element.classList.add('visible')
+               }
+           }
+  
            const translateX = Math.sin(cursor.x * Math.PI * 2) * 2
            const translateY = - cursor.y * 3
            point.element.style.transform = `translateX(${translateX}px) translateY(${translateY}px)`
            camera.lookAt(point.position)
-       
+       }
    }
  
    // Render
