@@ -123,7 +123,8 @@ debugObject.envMapIntensity = 2.5
  
 // 3D Model
 gltfLoader.load(
-   'assets/static/models/DamagedHelmet/glTF/mayeight2.gltf',
+//    'assets/static/models/DamagedHelmet/glTF/mayeight2.gltf',
+'/models/models/DamagedHelmet/glTF/mayeight2.gltf',
    (gltf) =>
    {
        gltf.scene.scale.set(1.33, 1.33, 1.33)
