@@ -13,15 +13,6 @@
   
 [[redirects]]
   from = "/*"
-  to = "/index.html"
+  to = "/about.html"
   status = 200
 
-  [[redirects]]
-  from = "experiments.html"
-  to = "experiments.html"
-  status = 200
-
-    [[redirects]]
-  from = "/about.html"
-  to = "about.html"
-  status = 200
