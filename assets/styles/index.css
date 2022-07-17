@@ -506,10 +506,16 @@ body{
 
 
 }
-
-.underName {
+#extraspace{
+    /* margin-left: 1000px; */
+    padding-right: 4px;
+    display: inline-block;
+}
+#underName {
     text-align: center;
     line-height: 1px;
+    font-size: 13px;
+    letter-spacing: 5px;
     position: relative;
     font-family: jubilat-thin,serif;
     font-weight: 700;
@@ -518,7 +524,7 @@ body{
 }
 
 #nameTitle{
-    margin-top: 39vh;
+    margin-top: 45vh;
     text-align: center;
     position:absolute;
     font-family: jubilat,serif;
