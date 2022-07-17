@@ -5,10 +5,24 @@ body {
     scroll-behavior: smooth;
     overflow-x: hidden;
 }
+#port{
+    width: 30vw;
+    /* text-align: right; */
+    /* display: block; */
+     /* margin-left: auto; */
+     /* position:absolute; */
+     opacity: 30%;
+
+position: absolute;
+     margin-left: 45vw;
+ 
+
+}
 hr{
     width:85%;
     margin-left: 0px;
 }
+
 
 .container {
     align-content: flex-start
@@ -498,6 +512,19 @@ a {
         align-items: center;
         justify-content: center;
     }
+    #port{
+        width: 40vw;
+        /* text-align: right; */
+        /* display: block; */
+         /* margin-left: auto; */
+         /* position:absolute; */
+         opacity: 30%;
+    
+    /* position: absolute; */
+         margin-left: 45vw;
+     
+    
+    }
     h2 {
         display: inline;
         letter-spacing: 7px;
@@ -589,6 +616,7 @@ a {
         padding: 10px;
     }
     #margined {
+    
         margin-left: 15%;
         margin-right: 15%;
     }
@@ -851,6 +879,7 @@ a.bottom:hover:before {
     color: rgb(97, 95, 95);
     letter-spacing: 2px;
     z-index: 20;
+    
 }
 
 
@@ -1071,6 +1100,7 @@ a {
         white-space: nowrap;
        
     }
+    
    
     .menu-wrap .menu {
 
@@ -1107,6 +1137,22 @@ a {
         display: flex;
         align-items: center;
         justify-content: center;
+    }
+    #port{
+        width: 60vw;
+        /* text-align: right; */
+        display: block;
+         /* margin-left: auto; */
+     
+position: static;
+         /* opacity: 30%; */
+         opacity: 60%;
+    
+    /* position: absolute; */
+         margin-left: 0vw;
+         margin-top: 10vh;
+     
+    
     }
 
     #margined{

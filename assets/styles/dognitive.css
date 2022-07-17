@@ -106,6 +106,9 @@ a:hover {
     -o-transition: color .2s ease-out;
     transition: color .2s ease-out;
 }
+/* #tabbed{
+    margin-left: 2vw;
+} */
 
 h1 {
     font-size: 20px;
