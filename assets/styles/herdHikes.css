@@ -1682,7 +1682,8 @@ th,
     font-family: rubik, sans-serif;
     font-weight: 400;
     font-style: normal;
-    color: rgb(28, 28, 28);
+    /* color: rgb(28, 28, 28); */
+    color:#747474;
     padding-left: 10px;
     padding-right: 10px;
     letter-spacing: 4px;

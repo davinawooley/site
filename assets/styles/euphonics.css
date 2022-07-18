@@ -147,7 +147,8 @@ body{
         font-family: jubilat-thin,serif;
         font-weight: 700;
         font-style: normal;
-        color: rgb(28, 28, 28);
+        /* color: rgb(28, 28, 28); */
+        color:#747474;
         padding: 10px;
         letter-spacing: 4px;
     }

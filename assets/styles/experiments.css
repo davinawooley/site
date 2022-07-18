@@ -729,7 +729,7 @@ th,
     }
 
     li {
-             font-family: rubik, sans-serif;
+        font-family: rubik, sans-serif;
         font-weight: 400;
         font-style: normal; 
         list-style-type: none;
@@ -1311,7 +1311,8 @@ body {
         position: relative;
         font-family: rubik, sans-serif;
         font-weight: 400;
-        color: rgb(28, 28, 28);
+        /* color: rgb(28, 28, 28); */
+        color:#747474;
         padding-left: 10px;
         padding-right: 10px;
         letter-spacing: 4px;
