@@ -133,7 +133,8 @@ ul.sideNav li {
 }
 
 a {
-    color: rgb(74, 74, 74);
+    /* color: rgb(74, 74, 74); */
+    color:#605f5f;
     text-decoration: none;
     display: inline-block;
 }
@@ -916,7 +917,8 @@ ul.sideNav li {
 
 
 a {
-    color: rgb(74, 74, 74);
+    /* color: rgb(74, 74, 74); */
+    color:#605f5f;
     text-decoration: none;
     display: inline-block;
 }
@@ -1312,7 +1314,8 @@ body {
         font-family: rubik, sans-serif;
         font-weight: 400;
         /* color: rgb(28, 28, 28); */
-        color:#747474;
+        /* color:#747474; */
+        color:#605f5f;
         padding-left: 10px;
         padding-right: 10px;
         letter-spacing: 4px;

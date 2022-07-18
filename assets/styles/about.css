@@ -1014,7 +1014,10 @@ ul.sideNav li {
 
 
 a {
-    color: rgb(74, 74, 74);
+
+    color:#605f5f;
+
+    
     text-decoration: none;
     display: inline-block;
 }
