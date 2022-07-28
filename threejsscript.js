@@ -3,15 +3,7 @@ import * as THREE from 'three'
 import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls.js'
 import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader.js'
 import { gsap } from 'gsap'
-// custom geom
-var coordinatesList = [
-   new THREE.Vector3(0, 0, 0),
-   new THREE.Vector3(0, 10, 0),
-   new THREE.Vector3(5, 10, 0),
-   new THREE.Vector3(2, 8, 0),
-   new THREE.Vector3(5, 5, 0)
- ];
-// Loaders
+
 const loadingBarElement = document.querySelector('.loading-bar')
  
 let sceneReady = false
@@ -35,7 +27,7 @@ const loadingManager = new THREE.LoadingManager(
    },
  
    // Progress
-   (itemUrl, itemsLoaded, itemsTotal) =>
+   (itemsLoaded, itemsTotal) =>
    {
        // Calculate progress and update bar
        const progressRatio = itemsLoaded / itemsTotal
@@ -106,12 +98,13 @@ const updateAllMaterials = () =>
 * Environment map
 */
 const environmentMap = cubeTextureLoader.load([
-   '/textures/update/0/px.jpg',
-   '/textures/update/0/nx.jpg',
-   '/textures/update/0/py.jpg',
-   '/textures/update/0/ny.jpg',
-   '/textures/update/0/pz.jpg',
-   '/textures/update/0/nz.jpg'
+    '/models/textures/update/0/px.jpg',
+    '/models/textures/update/0/nx.jpg',
+    '/models/textures/update/0/py.jpg',
+    '/models/textures/update/0/ny.jpg',
+    '/models/textures/update/0/pz.jpg',
+    '/models/textures/update/0/nz.jpg'
+
 ])
  
 environmentMap.encoding = THREE.sRGBEncoding
@@ -123,8 +116,7 @@ debugObject.envMapIntensity = 2.5
  
 // 3D Model
 gltfLoader.load(
-//    'assets/static/models/DamagedHelmet/glTF/mayeight2.gltf',
-// '/models/models/DamagedHelmet/glTF/mayeight2.gltf',
+
 '/public/models/models/DamagedHelmet/glTF/mayeight2.gltf',
    (gltf) =>
    {
@@ -313,5 +305,3 @@ const tick = () =>
 }
  
 tick()
- 
-
