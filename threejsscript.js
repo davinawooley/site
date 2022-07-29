@@ -68,8 +68,7 @@ const overlayMaterial = new THREE.ShaderMaterial({
 })
 const overlay = new THREE.Mesh(overlayGeomeometry, overlayMaterial)
 scene.add(overlay)
-// materials
- 
+
 const updateAllMaterials = () =>
 {
    scene.traverse((child) =>
