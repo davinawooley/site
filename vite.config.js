@@ -1,7 +1,9 @@
 import { resolve } from 'path'
 import { defineConfig } from 'vite'
+import { splitVendorChunkPlugin } from 'vite'
 
 export default defineConfig({
+  
   build: {
     chunkSizeWarningLimit:1500,
     // lib: {
@@ -25,5 +27,6 @@ export default defineConfig({
         // }
       }
     }
-  }
+  },
+  plugins: [splitVendorChunkPlugin()]
 })
