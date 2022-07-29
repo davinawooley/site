@@ -1,7 +1,7 @@
 import './style.css'
 import * as THREE from '/node_modules/three/build/three.module.js'
-import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls.js'
-import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader.js'
+import { OrbitControls } from '/node_modules/three/examples/jsm/controls/OrbitControls.js'
+import { GLTFLoader } from '/node_modules/three/examples/jsm/loaders/GLTFLoader.js'
 import { gsap } from 'gsap'
 
 const loadingBarElement = document.querySelector('.loading-bar')
