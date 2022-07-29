@@ -1,6 +1,6 @@
 {
     "name": "dewportfolio",
-
+    "type": "module",
     "author": "DEW",
     "license": "UNLICENSED",
     "private": true,

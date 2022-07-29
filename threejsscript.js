@@ -1,5 +1,4 @@
 import * as THREE from '/node_modules/three/build/three.module.js'
-// import { OrbitControls } from 'three-orbitcontrols'
 import {OrbitControls} from 'https://threejsfundamentals.org/threejs/resources/threejs/r122/examples/jsm/controls/OrbitControls.js';
 import { GLTFLoader } from '/node_modules/three/examples/jsm/loaders/GLTFLoader.js'
 import { gsap } from './node_modules/gsap'
@@ -12,10 +11,7 @@ const loadingManager = new THREE.LoadingManager(
    {
        window.setTimeout(() =>
        {
-           // Overlay
            gsap.to(overlayMaterial.uniforms.uAlpha, { duration: 4, value: 0, delay: 1 })
- 
-           // Update load
            loadingBarElement.classList.add('ended')
            loadingBarElement.style.transform = ''
        }, 500)
@@ -23,10 +19,8 @@ const loadingManager = new THREE.LoadingManager(
 
    },
  
-   // Progress
    (itemsLoaded, itemsTotal) =>
    {
-       // Calculate progress and update bar
        const progressRatio = itemsLoaded / itemsTotal
        loadingBarElement.style.transform = `scaleX(${progressRatio})`
    }
@@ -100,7 +94,6 @@ const environmentMap = cubeTextureLoader.load([
     '/models/textures/update/0/ny.jpg',
     '/models/textures/update/0/pz.jpg',
     '/models/textures/update/0/nz.jpg'
-
 ])
  
 environmentMap.encoding = THREE.sRGBEncoding
@@ -156,7 +149,6 @@ directionalLight.position.set(- 5, 5, 0)
 scene.add(directionalLight)
  
 // second light
- 
 const directionalLight2 = new THREE.DirectionalLight('white', 3)
  
 directionalLight.castShadow = true
