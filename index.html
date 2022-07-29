@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en-US">
+<html>
  
         <head>
             <meta charset="UTF-8">
@@ -29,6 +29,14 @@
         </head>
 
     <body>
+        <script type="importmap">
+            {
+              "imports": {
+                "three": "./node_modules/three/build/three.module.js",
+                "three/examples/jsm/": "./node_modules/three/examples/jsm/" // THIS DOES NOT WORK
+              }
+            }
+          </script>
     
           <!-- <div class = "three_bg"></div> -->
       
@@ -49,6 +57,8 @@
                </a>
              
         </div>
+        
     </body>
 </html>
+
 
