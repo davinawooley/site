@@ -20,10 +20,7 @@ const loadingManager = new THREE.LoadingManager(
            loadingBarElement.style.transform = ''
        }, 500)
  
-    //    window.setTimeout(() =>
-    //    {
-    //        sceneReady = true
-    //    }, 2000)
+
    },
  
    // Progress
@@ -117,7 +114,7 @@ debugObject.envMapIntensity = 2.5
 // 3D Model
 gltfLoader.load(
 
-'/public/models/models/DamagedHelmet/glTF/mayeight2.gltf',
+'/models/models/DamagedHelmet/glTF/mayeight2.gltf',
    (gltf) =>
    {
        gltf.scene.scale.set(1.33, 1.33, 1.33)
