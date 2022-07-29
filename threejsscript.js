@@ -1,4 +1,4 @@
-import './style.css'
+// import './style.css'
 import * as THREE from '/node_modules/three/build/three.module.js'
 // import { OrbitControls } from 'three-orbitcontrols'
 import {OrbitControls} from 'https://threejsfundamentals.org/threejs/resources/threejs/r122/examples/jsm/controls/OrbitControls.js';
