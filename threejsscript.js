@@ -25,9 +25,12 @@ const loadingManager = new THREE.LoadingManager(
        loadingBarElement.style.transform = `scaleX(${progressRatio})`
    }
 )
+const scene = new THREE.Scene()
 const gltfLoader = new GLTFLoader(loadingManager)
-const cubeTextureLoader = new THREE.CubeTextureLoader(loadingManager)
- 
+
+// const cubeTextureLoader = new THREE.CubeTextureLoader(loadingManager)
+const cubeTextureLoader = new THREE.CubeTextureLoader()
+
 // Base
 // Debug
 const debugObject = {}
@@ -36,7 +39,7 @@ const debugObject = {}
 const canvas = document.querySelector('canvas.webgl')
  
 // Scene
-const scene = new THREE.Scene()
+// const scene = new THREE.Scene()
  
 // overlay
 const overlayGeomeometry = new THREE.PlaneBufferGeometry(2,2,1,1)
@@ -69,8 +72,8 @@ const updateAllMaterials = () =>
    {
        if(child instanceof THREE.Mesh && child.material instanceof THREE.MeshStandardMaterial)
        {
-           child.material.envMap = environmentMap
-           child.material.envMapIntensity = debugObject.envMapIntensity
+        //    child.material.envMap = environmentMap
+        //    child.material.envMapIntensity = debugObject.envMapIntensity
            child.material.needsUpdate = true
            child.material.metalness = 0.8
            child.material.roughness = 0.25
