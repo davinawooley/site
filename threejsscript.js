@@ -16,7 +16,6 @@ const loadingManager = new THREE.LoadingManager(
            loadingBarElement.style.transform = ''
        }, 500)
  
-
    },
  
    (itemsLoaded, itemsTotal) =>
@@ -91,12 +90,12 @@ const updateAllMaterials = () =>
 * Environment map
 */
 const environmentMap = cubeTextureLoader.load([
-    '/models/textures/update/0/px.jpg',
-    '/models/textures/update/0/nx.jpg',
-    '/models/textures/update/0/py.jpg',
-    '/models/textures/update/0/ny.jpg',
-    '/models/textures/update/0/pz.jpg',
-    '/models/textures/update/0/nz.jpg'
+    '/assets/static/textures/enviromentMaps/0/px.jpg',
+    '/assets/static/textures/enviromentMaps/0/nx.jpg',
+    '/assets/static/textures/enviromentMaps/0/ny.jpg',
+    '/assets/static/textures/enviromentMaps/0/pz.jpg',
+    '/assets/static/textures/enviromentMaps/0/py.jpg',
+    '/assets/static/textures/enviromentMaps/0/nz.jpg'
 ])
  
 environmentMap.encoding = THREE.sRGBEncoding
@@ -237,8 +236,7 @@ const tick = () =>
 {
    // Update controls
    controls.update()
-  
- 
+   
    // Update points only when the scene is ready
    if(sceneReady)
    {
