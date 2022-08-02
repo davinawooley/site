@@ -1,7 +1,8 @@
 import * as THREE from '/node_modules/three/build/three.module.js'
 import {OrbitControls} from 'https://threejsfundamentals.org/threejs/resources/threejs/r122/examples/jsm/controls/OrbitControls.js';
 import { GLTFLoader } from '/node_modules/three/examples/jsm/loaders/GLTFLoader.js'
-import { gsap } from './node_modules/gsap'
+import { gsap } from './node_modules/gsap/'
+
 
 const loadingBarElement = document.querySelector('.loading-bar')
  
@@ -97,13 +98,14 @@ const updateAllMaterials = () =>
 //     '/assets/static/textures/enviromentMaps/0/py.jpg',
 //     '/assets/static/textures/enviromentMaps/0/nz.jpg'
 // ])
+const environmentMap = cubeTextureLoader;
  
-// environmentMap.encoding = THREE.sRGBEncoding
+environmentMap.encoding = THREE.sRGBEncoding
  
-// scene.background = environmentMap
-// scene.environment = environmentMap
+scene.background = environmentMap
+scene.environment = environmentMap
  
-// debugObject.envMapIntensity = 2.5
+debugObject.envMapIntensity = 2.5
  
 // 3D Model
 gltfLoader.load(
