@@ -89,21 +89,21 @@ const updateAllMaterials = () =>
 /**
 * Environment map
 */
-const environmentMap = cubeTextureLoader.load([
-    '/assets/static/textures/enviromentMaps/0/px.jpg',
-    '/assets/static/textures/enviromentMaps/0/nx.jpg',
-    '/assets/static/textures/enviromentMaps/0/ny.jpg',
-    '/assets/static/textures/enviromentMaps/0/pz.jpg',
-    '/assets/static/textures/enviromentMaps/0/py.jpg',
-    '/assets/static/textures/enviromentMaps/0/nz.jpg'
-])
+// const environmentMap = cubeTextureLoader.load([
+//     '/assets/static/textures/enviromentMaps/0/px.jpg',
+//     '/assets/static/textures/enviromentMaps/0/nx.jpg',
+//     '/assets/static/textures/enviromentMaps/0/ny.jpg',
+//     '/assets/static/textures/enviromentMaps/0/pz.jpg',
+//     '/assets/static/textures/enviromentMaps/0/py.jpg',
+//     '/assets/static/textures/enviromentMaps/0/nz.jpg'
+// ])
  
-environmentMap.encoding = THREE.sRGBEncoding
+// environmentMap.encoding = THREE.sRGBEncoding
  
-scene.background = environmentMap
-scene.environment = environmentMap
+// scene.background = environmentMap
+// scene.environment = environmentMap
  
-debugObject.envMapIntensity = 2.5
+// debugObject.envMapIntensity = 2.5
  
 // 3D Model
 gltfLoader.load(
